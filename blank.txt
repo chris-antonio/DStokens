@@ -1,1 +1,8 @@
-test blank
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>test blank</h1>
+    <h2>Just testing</h2>
+  </body>
+</html>
