@@ -1,0 +1,404 @@
+{
+  "surface": {
+    "neutral": {
+      "default": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Background fill for neutral (general UI), base level.\nUsage: page and card background. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: always pair with the matching content/neutral or neutral &quot;on&quot; token and verify 4.5:1 for text placed on it.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{neutral.100}",
+        "$description": "Background fill for neutral (general UI), low-emphasis tint.\nUsage: secondary panels, wells and hovered rows. Mapping: Light: neutral/100 | Dark: neutral/800.\nAccessibility: always pair with the matching content/neutral or neutral &quot;on&quot; token and verify 4.5:1 for text placed on it.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{neutral.200}",
+        "$description": "Background fill for neutral (general UI), high-emphasis level, e.g. hover or pressed.\nUsage: raised or pressed neutral fills. Mapping: Light: neutral/200 | Dark: neutral/700.\nAccessibility: always pair with the matching content/neutral or neutral &quot;on&quot; token and verify 4.5:1 for text placed on it.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.900}",
+        "$description": "Background fill for neutral (general UI), on-color.\nUsage: inverse surface (dark in Light mode, light in Dark mode), e.g. tooltips. Mapping: Light: neutral/900 | Dark: neutral/50.\nAccessibility: vs surface/neutral/default: Light 15.7:1 (meets 3:1); Dark 15.7:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "brand": {
+      "default": {
+        "$type": "color",
+        "$value": "{brand.500}",
+        "$description": "Background fill for brand UI, base level.\nUsage: primary fill of brand elements (buttons, badges, banners). Mapping: Light: brand/500 | Dark: brand/400.\nAccessibility: always pair with the matching content/brand or brand \"on\" token and verify 4.5:1 for text placed on it.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{brand.50}",
+        "$description": "Background fill for brand UI, low-emphasis tint.\nUsage: soft background for brand messages (alerts, toasts). Mapping: Light: brand/50 | Dark: brand/900.\nAccessibility: always pair with the matching content/brand or brand \"on\" token and verify 4.5:1 for text placed on it.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{brand.600}",
+        "$description": "Background fill for brand UI, high-emphasis level, e.g. hover or pressed.\nUsage: hover/pressed fill of brand elements. Mapping: Light: brand/600 | Dark: brand/300.\nAccessibility: always pair with the matching content/brand or brand \"on\" token and verify 4.5:1 for text placed on it.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Background fill for brand UI, on-color.\nUsage: fill color to pair with text placed on brand surfaces. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: meaningful boundaries need 3:1; verify against the actual background (brand ramp is external).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "info": {
+      "default": {
+        "$type": "color",
+        "$value": "{feedback.info.500}",
+        "$description": "Background fill for informational UI, base level.\nUsage: primary fill of info elements (buttons, badges, banners). Mapping: Light: feedback/info/500 | Dark: feedback/info/400.\nAccessibility: always pair with the matching content/info or info \"on\" token and verify 4.5:1 for text placed on it.\nAccessibility: do not rely on color alone for info states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{feedback.info.50}",
+        "$description": "Background fill for informational UI, low-emphasis tint.\nUsage: soft background for info messages (alerts, toasts). Mapping: Light: feedback/info/50 | Dark: feedback/info/700.\nAccessibility: always pair with the matching content/info or info \"on\" token and verify 4.5:1 for text placed on it.\nAccessibility: do not rely on color alone for info states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{feedback.info.600}",
+        "$description": "Background fill for informational UI, high-emphasis level, e.g. hover or pressed.\nUsage: hover/pressed fill of info elements. Mapping: Light: feedback/info/600 | Dark: feedback/info/300.\nAccessibility: always pair with the matching content/info or info \"on\" token and verify 4.5:1 for text placed on it.\nAccessibility: do not rely on color alone for info states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Background fill for informational UI, on-color.\nUsage: fill color to pair with text placed on info surfaces. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: vs surface/info/default: Light 3.5:1 (meets 3:1); Dark 5.9:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for info states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "success": {
+      "default": {
+        "$type": "color",
+        "$value": "{feedback.success.500}",
+        "$description": "Background fill for success / positive UI, base level.\nUsage: primary fill of success elements (buttons, badges, banners). Mapping: Light: feedback/success/500 | Dark: feedback/success/400.\nAccessibility: always pair with the matching content/success or success \"on\" token and verify 4.5:1 for text placed on it.\nAccessibility: do not rely on color alone for success states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{feedback.success.50}",
+        "$description": "Background fill for success / positive UI, low-emphasis tint.\nUsage: soft background for success messages (alerts, toasts). Mapping: Light: feedback/success/50 | Dark: feedback/success/700.\nAccessibility: always pair with the matching content/success or success \"on\" token and verify 4.5:1 for text placed on it.\nAccessibility: do not rely on color alone for success states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{feedback.success.600}",
+        "$description": "Background fill for success / positive UI, high-emphasis level, e.g. hover or pressed.\nUsage: hover/pressed fill of success elements. Mapping: Light: feedback/success/600 | Dark: feedback/success/300.\nAccessibility: always pair with the matching content/success or success \"on\" token and verify 4.5:1 for text placed on it.\nAccessibility: do not rely on color alone for success states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Background fill for success / positive UI, on-color.\nUsage: fill color to pair with text placed on success surfaces. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: vs surface/success/default: Light 1.6:1 (below 3:1, decorative use only); Dark 10.5:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for success states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "warning": {
+      "default": {
+        "$type": "color",
+        "$value": "{feedback.warning.500}",
+        "$description": "Background fill for warning / caution UI, base level.\nUsage: primary fill of warning elements (buttons, badges, banners). Mapping: Light: feedback/warning/500 | Dark: feedback/warning/400.\nAccessibility: always pair with the matching content/warning or warning \"on\" token and verify 4.5:1 for text placed on it.\nAccessibility: do not rely on color alone for warning states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{feedback.warning.50}",
+        "$description": "Background fill for warning / caution UI, low-emphasis tint.\nUsage: soft background for warning messages (alerts, toasts). Mapping: Light: feedback/warning/50 | Dark: feedback/warning/700.\nAccessibility: always pair with the matching content/warning or warning \"on\" token and verify 4.5:1 for text placed on it.\nAccessibility: do not rely on color alone for warning states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{feedback.warning.600}",
+        "$description": "Background fill for warning / caution UI, high-emphasis level, e.g. hover or pressed.\nUsage: hover/pressed fill of warning elements. Mapping: Light: feedback/warning/600 | Dark: feedback/warning/300.\nAccessibility: always pair with the matching content/warning or warning \"on\" token and verify 4.5:1 for text placed on it.\nAccessibility: do not rely on color alone for warning states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.900}",
+        "$description": "Background fill for warning / caution UI, on-color.\nUsage: fill color to pair with text placed on warning surfaces. Mapping: Light: neutral/900 | Dark: neutral/900.\nAccessibility: vs surface/warning/default: Light 8.4:1 (meets 3:1); Dark 9.6:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for warning states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "error": {
+      "default": {
+        "$type": "color",
+        "$value": "{feedback.error.500}",
+        "$description": "Background fill for error / destructive UI, base level.\nUsage: primary fill of error elements (buttons, badges, banners). Mapping: Light: feedback/error/500 | Dark: feedback/error/400.\nAccessibility: always pair with the matching content/error or error \"on\" token and verify 4.5:1 for text placed on it.\nAccessibility: do not rely on color alone for error states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{feedback.error.50}",
+        "$description": "Background fill for error / destructive UI, low-emphasis tint.\nUsage: soft background for error messages (alerts, toasts). Mapping: Light: feedback/error/50 | Dark: feedback/error/700.\nAccessibility: always pair with the matching content/error or error \"on\" token and verify 4.5:1 for text placed on it.\nAccessibility: do not rely on color alone for error states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{feedback.error.600}",
+        "$description": "Background fill for error / destructive UI, high-emphasis level, e.g. hover or pressed.\nUsage: hover/pressed fill of error elements. Mapping: Light: feedback/error/600 | Dark: feedback/error/300.\nAccessibility: always pair with the matching content/error or error \"on\" token and verify 4.5:1 for text placed on it.\nAccessibility: do not rely on color alone for error states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Background fill for error / destructive UI, on-color.\nUsage: fill color to pair with text placed on error surfaces. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: vs surface/error/default: Light 3.9:1 (meets 3:1); Dark 4.9:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for error states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    }
+  },
+  "content": {
+    "neutral": {
+      "default": {
+        "$type": "color",
+        "$value": "{neutral.900}",
+        "$description": "Text and icon color for neutral (general UI), base level.\nUsage: primary text and icons. Mapping: Light: neutral/900 | Dark: neutral/50.\nAccessibility: vs surface/neutral/default: Light 15.7:1 (meets 4.5:1); Dark 15.7:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{neutral.600}",
+        "$description": "Text and icon color for neutral (general UI), low-emphasis tint.\nUsage: secondary or helper text. Mapping: Light: neutral/600 | Dark: neutral/400.\nAccessibility: vs surface/neutral/default: Light 5.1:1 (meets 4.5:1); Dark 6.1:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{neutral.700}",
+        "$description": "Text and icon color for neutral (general UI), high-emphasis level, e.g. hover or pressed.\nUsage: highest-emphasis text. Mapping: Light: neutral/700 | Dark: neutral/200.\nAccessibility: vs surface/neutral/default: Light 7.6:1 (meets 4.5:1); Dark 10.9:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Text and icon color for neutral (general UI), on-color.\nUsage: text and icons placed on top of surface/neutral/default. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: vs surface/neutral/default: Light 1.0:1 (below 4.5:1, decorative use only); Dark 1.0:1 (below 4.5:1, decorative use only). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "brand": {
+      "default": {
+        "$type": "color",
+        "$value": "{brand.600}",
+        "$description": "Text and icon color for brand UI, base level.\nUsage: brand text and icons. Mapping: Light: brand/600 | Dark: brand/300.\nAccessibility: text needs 4.5:1, large text and icons 3:1; verify against the actual background (brand ramp is external).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{brand.400}",
+        "$description": "Text and icon color for brand UI, low-emphasis tint.\nUsage: secondary brand text and decorative icons. Mapping: Light: brand/400 | Dark: brand/500.\nAccessibility: text needs 4.5:1, large text and icons 3:1; verify against the actual background (brand ramp is external).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{brand.700}",
+        "$description": "Text and icon color for brand UI, high-emphasis level, e.g. hover or pressed.\nUsage: emphasized brand text. Mapping: Light: brand/700 | Dark: brand/200.\nAccessibility: text needs 4.5:1, large text and icons 3:1; verify against the actual background (brand ramp is external).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Text and icon color for brand UI, on-color.\nUsage: text and icons placed on top of surface/brand/default. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: text needs 4.5:1, large text and icons 3:1; verify against the actual background (brand ramp is external).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "info": {
+      "default": {
+        "$type": "color",
+        "$value": "{feedback.info.600}",
+        "$description": "Text and icon color for informational UI, base level.\nUsage: info text and icons. Mapping: Light: feedback/info/600 | Dark: feedback/info/300.\nAccessibility: vs surface/neutral/default: Light 5.1:1 (meets 4.5:1); Dark 7.8:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for info states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{feedback.info.400}",
+        "$description": "Text and icon color for informational UI, low-emphasis tint.\nUsage: secondary info text and decorative icons. Mapping: Light: feedback/info/400 | Dark: feedback/info/500.\nAccessibility: vs surface/neutral/default: Light 2.7:1 (below 4.5:1, decorative use only); Dark 4.5:1 (below 4.5:1, only for large text or icons). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for info states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{feedback.info.700}",
+        "$description": "Text and icon color for informational UI, high-emphasis level, e.g. hover or pressed.\nUsage: emphasized info text. Mapping: Light: feedback/info/700 | Dark: feedback/info/200.\nAccessibility: vs surface/neutral/default: Light 7.6:1 (meets 4.5:1); Dark 10.4:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for info states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Text and icon color for informational UI, on-color.\nUsage: text and icons placed on top of surface/info/default. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: vs surface/info/default: Light 3.5:1 (below 4.5:1, only for large text or icons); Dark 5.9:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for info states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "success": {
+      "default": {
+        "$type": "color",
+        "$value": "{feedback.success.600}",
+        "$description": "Text and icon color for success / positive UI, base level.\nUsage: success text and icons. Mapping: Light: feedback/success/600 | Dark: feedback/success/300.\nAccessibility: vs surface/neutral/default: Light 2.6:1 (below 4.5:1, decorative use only); Dark 11.7:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for success states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{feedback.success.400}",
+        "$description": "Text and icon color for success / positive UI, low-emphasis tint.\nUsage: secondary success text and decorative icons. Mapping: Light: feedback/success/400 | Dark: feedback/success/500.\nAccessibility: vs surface/neutral/default: Light 1.5:1 (below 4.5:1, decorative use only); Dark 9.5:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for success states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{feedback.success.700}",
+        "$description": "Text and icon color for success / positive UI, high-emphasis level, e.g. hover or pressed.\nUsage: emphasized success text. Mapping: Light: feedback/success/700 | Dark: feedback/success/200.\nAccessibility: vs surface/neutral/default: Light 4.3:1 (below 4.5:1, only for large text or icons); Dark 13.3:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for success states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Text and icon color for success / positive UI, on-color.\nUsage: text and icons placed on top of surface/success/default. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: vs surface/success/default: Light 1.6:1 (below 4.5:1, decorative use only); Dark 10.5:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for success states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "warning": {
+      "default": {
+        "$type": "color",
+        "$value": "{feedback.warning.600}",
+        "$description": "Text and icon color for warning / caution UI, base level.\nUsage: warning text and icons. Mapping: Light: feedback/warning/600 | Dark: feedback/warning/300.\nAccessibility: vs surface/neutral/default: Light 2.9:1 (below 4.5:1, decorative use only); Dark 11.1:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for warning states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{feedback.warning.400}",
+        "$description": "Text and icon color for warning / caution UI, low-emphasis tint.\nUsage: secondary warning text and decorative icons. Mapping: Light: feedback/warning/400 | Dark: feedback/warning/500.\nAccessibility: vs surface/neutral/default: Light 1.6:1 (below 4.5:1, decorative use only); Dark 8.4:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for warning states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{feedback.warning.700}",
+        "$description": "Text and icon color for warning / caution UI, high-emphasis level, e.g. hover or pressed.\nUsage: emphasized warning text. Mapping: Light: feedback/warning/700 | Dark: feedback/warning/200.\nAccessibility: vs surface/neutral/default: Light 4.8:1 (meets 4.5:1); Dark 13.0:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for warning states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.900}",
+        "$description": "Text and icon color for warning / caution UI, on-color.\nUsage: text and icons placed on top of surface/warning/default. Mapping: Light: neutral/900 | Dark: neutral/900.\nAccessibility: vs surface/warning/default: Light 8.4:1 (meets 4.5:1); Dark 9.6:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for warning states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "error": {
+      "default": {
+        "$type": "color",
+        "$value": "{feedback.error.600}",
+        "$description": "Text and icon color for error / destructive UI, base level.\nUsage: error text and icons. Mapping: Light: feedback/error/600 | Dark: feedback/error/300.\nAccessibility: vs surface/neutral/default: Light 5.6:1 (meets 4.5:1); Dark 6.5:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for error states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{feedback.error.400}",
+        "$description": "Text and icon color for error / destructive UI, low-emphasis tint.\nUsage: secondary error text and decorative icons. Mapping: Light: feedback/error/400 | Dark: feedback/error/500.\nAccessibility: vs surface/neutral/default: Light 3.2:1 (below 4.5:1, only for large text or icons); Dark 4.0:1 (below 4.5:1, only for large text or icons). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for error states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{feedback.error.700}",
+        "$description": "Text and icon color for error / destructive UI, high-emphasis level, e.g. hover or pressed.\nUsage: emphasized error text. Mapping: Light: feedback/error/700 | Dark: feedback/error/200.\nAccessibility: vs surface/neutral/default: Light 8.3:1 (meets 4.5:1); Dark 9.1:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for error states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Text and icon color for error / destructive UI, on-color.\nUsage: text and icons placed on top of surface/error/default. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: vs surface/error/default: Light 3.9:1 (below 4.5:1, only for large text or icons); Dark 4.9:1 (meets 4.5:1). Text needs 4.5:1, large text and icons 3:1 (WCAG 1.4.3 / 1.4.11).\nAccessibility: do not rely on color alone for error states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    }
+  },
+  "border": {
+    "neutral": {
+      "default": {
+        "$type": "color",
+        "$value": "{neutral.300}",
+        "$description": "Border and divider color for neutral (general UI), base level.\nUsage: standard borders and inputs. Mapping: Light: neutral/300 | Dark: neutral/600.\nAccessibility: vs surface/neutral/default: Light 1.9:1 (below 3:1, decorative use only); Dark 3.0:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{neutral.200}",
+        "$description": "Border and divider color for neutral (general UI), low-emphasis tint.\nUsage: dividers and hairlines. Mapping: Light: neutral/200 | Dark: neutral/700.\nAccessibility: vs surface/neutral/default: Light 1.4:1 (below 3:1, decorative use only); Dark 2.1:1 (below 3:1, decorative use only). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{neutral.500}",
+        "$description": "Border and divider color for neutral (general UI), high-emphasis level, e.g. hover or pressed.\nUsage: emphasized or hovered borders. Mapping: Light: neutral/500 | Dark: neutral/400.\nAccessibility: vs surface/neutral/default: Light 3.6:1 (meets 3:1); Dark 6.1:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.900}",
+        "$description": "Border and divider color for neutral (general UI), on-color.\nUsage: outline on top of surface/neutral/default. Mapping: Light: neutral/900 | Dark: neutral/50.\nAccessibility: vs surface/neutral/default: Light 15.7:1 (meets 3:1); Dark 15.7:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "brand": {
+      "default": {
+        "$type": "color",
+        "$value": "{brand.500}",
+        "$description": "Border and divider color for brand UI, base level.\nUsage: brand outlines. Mapping: Light: brand/500 | Dark: brand/400.\nAccessibility: meaningful boundaries need 3:1; verify against the actual background (brand ramp is external).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{brand.200}",
+        "$description": "Border and divider color for brand UI, low-emphasis tint.\nUsage: soft brand outlines. Mapping: Light: brand/200 | Dark: brand/700.\nAccessibility: meaningful boundaries need 3:1; verify against the actual background (brand ramp is external).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{brand.700}",
+        "$description": "Border and divider color for brand UI, high-emphasis level, e.g. hover or pressed.\nUsage: emphasized brand outlines. Mapping: Light: brand/700 | Dark: brand/200.\nAccessibility: meaningful boundaries need 3:1; verify against the actual background (brand ramp is external).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Border and divider color for brand UI, on-color.\nUsage: outline on top of surface/brand/default. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: meaningful boundaries need 3:1; verify against the actual background (brand ramp is external).\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "info": {
+      "default": {
+        "$type": "color",
+        "$value": "{feedback.info.500}",
+        "$description": "Border and divider color for informational UI, base level.\nUsage: info outlines. Mapping: Light: feedback/info/500 | Dark: feedback/info/400.\nAccessibility: vs surface/neutral/default: Light 3.5:1 (meets 3:1); Dark 5.9:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for info states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{feedback.info.200}",
+        "$description": "Border and divider color for informational UI, low-emphasis tint.\nUsage: soft info outlines. Mapping: Light: feedback/info/200 | Dark: feedback/info/700.\nAccessibility: vs surface/neutral/default: Light 1.5:1 (below 3:1, decorative use only); Dark 2.1:1 (below 3:1, decorative use only). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for info states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{feedback.info.700}",
+        "$description": "Border and divider color for informational UI, high-emphasis level, e.g. hover or pressed.\nUsage: emphasized info outlines. Mapping: Light: feedback/info/700 | Dark: feedback/info/200.\nAccessibility: vs surface/neutral/default: Light 7.6:1 (meets 3:1); Dark 10.4:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for info states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Border and divider color for informational UI, on-color.\nUsage: outline on top of surface/info/default. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: vs surface/info/default: Light 3.5:1 (meets 3:1); Dark 5.9:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for info states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "success": {
+      "default": {
+        "$type": "color",
+        "$value": "{feedback.success.500}",
+        "$description": "Border and divider color for success / positive UI, base level.\nUsage: success outlines. Mapping: Light: feedback/success/500 | Dark: feedback/success/400.\nAccessibility: vs surface/neutral/default: Light 1.6:1 (below 3:1, decorative use only); Dark 10.5:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for success states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{feedback.success.200}",
+        "$description": "Border and divider color for success / positive UI, low-emphasis tint.\nUsage: soft success outlines. Mapping: Light: feedback/success/200 | Dark: feedback/success/700.\nAccessibility: vs surface/neutral/default: Light 1.2:1 (below 3:1, decorative use only); Dark 3.6:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for success states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{feedback.success.700}",
+        "$description": "Border and divider color for success / positive UI, high-emphasis level, e.g. hover or pressed.\nUsage: emphasized success outlines. Mapping: Light: feedback/success/700 | Dark: feedback/success/200.\nAccessibility: vs surface/neutral/default: Light 4.3:1 (meets 3:1); Dark 13.3:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for success states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Border and divider color for success / positive UI, on-color.\nUsage: outline on top of surface/success/default. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: vs surface/success/default: Light 1.6:1 (below 3:1, decorative use only); Dark 10.5:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for success states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "warning": {
+      "default": {
+        "$type": "color",
+        "$value": "{feedback.warning.500}",
+        "$description": "Border and divider color for warning / caution UI, base level.\nUsage: warning outlines. Mapping: Light: feedback/warning/500 | Dark: feedback/warning/400.\nAccessibility: vs surface/neutral/default: Light 1.9:1 (below 3:1, decorative use only); Dark 9.6:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for warning states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{feedback.warning.200}",
+        "$description": "Border and divider color for warning / caution UI, low-emphasis tint.\nUsage: soft warning outlines. Mapping: Light: feedback/warning/200 | Dark: feedback/warning/700.\nAccessibility: vs surface/neutral/default: Light 1.2:1 (below 3:1, decorative use only); Dark 3.3:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for warning states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{feedback.warning.700}",
+        "$description": "Border and divider color for warning / caution UI, high-emphasis level, e.g. hover or pressed.\nUsage: emphasized warning outlines. Mapping: Light: feedback/warning/700 | Dark: feedback/warning/200.\nAccessibility: vs surface/neutral/default: Light 4.8:1 (meets 3:1); Dark 13.0:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for warning states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.900}",
+        "$description": "Border and divider color for warning / caution UI, on-color.\nUsage: outline on top of surface/warning/default. Mapping: Light: neutral/900 | Dark: neutral/900.\nAccessibility: vs surface/warning/default: Light 8.4:1 (meets 3:1); Dark 9.6:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for warning states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    },
+    "error": {
+      "default": {
+        "$type": "color",
+        "$value": "{feedback.error.500}",
+        "$description": "Border and divider color for error / destructive UI, base level.\nUsage: error outlines. Mapping: Light: feedback/error/500 | Dark: feedback/error/400.\nAccessibility: vs surface/neutral/default: Light 3.9:1 (meets 3:1); Dark 4.9:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for error states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{feedback.error.200}",
+        "$description": "Border and divider color for error / destructive UI, low-emphasis tint.\nUsage: soft error outlines. Mapping: Light: feedback/error/200 | Dark: feedback/error/700.\nAccessibility: vs surface/neutral/default: Light 1.7:1 (below 3:1, decorative use only); Dark 1.9:1 (below 3:1, decorative use only). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for error states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{feedback.error.700}",
+        "$description": "Border and divider color for error / destructive UI, high-emphasis level, e.g. hover or pressed.\nUsage: emphasized error outlines. Mapping: Light: feedback/error/700 | Dark: feedback/error/200.\nAccessibility: vs surface/neutral/default: Light 8.3:1 (meets 3:1); Dark 9.1:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for error states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{neutral.50}",
+        "$description": "Border and divider color for error / destructive UI, on-color.\nUsage: outline on top of surface/error/default. Mapping: Light: neutral/50 | Dark: neutral/900.\nAccessibility: vs surface/error/default: Light 3.9:1 (meets 3:1); Dark 4.9:1 (meets 3:1). Meaningful boundaries need 3:1 (WCAG 1.4.11).\nAccessibility: do not rely on color alone for error states; add an icon or text.\nAI: semantic token. Bind this in components; it switches automatically between Light/Dark modes. Never hard-code hex."
+      }
+    }
+  }
+}

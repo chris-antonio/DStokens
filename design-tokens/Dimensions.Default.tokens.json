@@ -1,0 +1,127 @@
+{
+  "2": {
+    "$type": "dimension",
+    "$value": "2px",
+    "$description": "Primitive dimension: 2px (0.125rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "4": {
+    "$type": "dimension",
+    "$value": "4px",
+    "$description": "Primitive dimension: 4px (0.25rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "8": {
+    "$type": "dimension",
+    "$value": "8px",
+    "$description": "Primitive dimension: 8px (0.5rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "12": {
+    "$type": "dimension",
+    "$value": "12px",
+    "$description": "Primitive dimension: 12px (0.75rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "16": {
+    "$type": "dimension",
+    "$value": "16px",
+    "$description": "Primitive dimension: 16px (1rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "20": {
+    "$type": "dimension",
+    "$value": "20px",
+    "$description": "Primitive dimension: 20px (1.25rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "24": {
+    "$type": "dimension",
+    "$value": "24px",
+    "$description": "Primitive dimension: 24px (1.5rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "28": {
+    "$type": "dimension",
+    "$value": "28px",
+    "$description": "Primitive dimension: 28px (1.75rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "32": {
+    "$type": "dimension",
+    "$value": "32px",
+    "$description": "Primitive dimension: 32px (2rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "36": {
+    "$type": "dimension",
+    "$value": "36px",
+    "$description": "Primitive dimension: 36px (2.25rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "40": {
+    "$type": "dimension",
+    "$value": "40px",
+    "$description": "Primitive dimension: 40px (2.5rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "44": {
+    "$type": "dimension",
+    "$value": "44px",
+    "$description": "Primitive dimension: 44px (2.75rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "48": {
+    "$type": "dimension",
+    "$value": "48px",
+    "$description": "Primitive dimension: 48px (3rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "52": {
+    "$type": "dimension",
+    "$value": "52px",
+    "$description": "Primitive dimension: 52px (3.25rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "56": {
+    "$type": "dimension",
+    "$value": "56px",
+    "$description": "Primitive dimension: 56px (3.5rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "60": {
+    "$type": "dimension",
+    "$value": "60px",
+    "$description": "Primitive dimension: 60px (3.75rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "64": {
+    "$type": "dimension",
+    "$value": "64px",
+    "$description": "Primitive dimension: 64px (4rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "72": {
+    "$type": "dimension",
+    "$value": "72px",
+    "$description": "Primitive dimension: 72px (4.5rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "80": {
+    "$type": "dimension",
+    "$value": "80px",
+    "$description": "Primitive dimension: 80px (5rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "88": {
+    "$type": "dimension",
+    "$value": "88px",
+    "$description": "Primitive dimension: 88px (5.5rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "96": {
+    "$type": "dimension",
+    "$value": "96px",
+    "$description": "Primitive dimension: 96px (6rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "104": {
+    "$type": "dimension",
+    "$value": "104px",
+    "$description": "Primitive dimension: 104px (6.5rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "112": {
+    "$type": "dimension",
+    "$value": "112px",
+    "$description": "Primitive dimension: 112px (7rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "120": {
+    "$type": "dimension",
+    "$value": "120px",
+    "$description": "Primitive dimension: 120px (7.5rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  },
+  "128": {
+    "$type": "dimension",
+    "$value": "128px",
+    "$description": "Primitive dimension: 128px (8rem).\nUsage: raw scale value on a 4px grid (plus 2px). Aliased by Viewport tokens for spacing, radius and size; do not bind directly in components.\nAI: primitive token. Reference it only from Viewport tokens (spacing, radius, size), never directly from components."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "elevation": {
+    "interactive": {
+      "default": {
+        "$type": "shadow",
+        "$description": "Resting elevation for interactive surfaces.\nUsage: buttons, cards and rows that can be pressed.\nSpec: drop shadow x0 y1 blur 3 spread 0 #000000@16%.\nAccessibility: shadows alone are not a sufficient boundary (WCAG 1.4.11); pair with a border or fill contrast, and never use elevation as the only cue for state.\nAI: apply the effect style elevation/interactive/default as a whole; do not recreate shadows with raw values. In CSS use box-shadow.",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "1px",
+            "blur": "3px",
+            "spread": "0px",
+            "color": "#00000029"
+          }
+        ]
+      },
+      "hover": {
+        "$type": "shadow",
+        "$description": "Raised elevation on hover or focus-within.\nUsage: hover feedback for interactive surfaces; transition from default.\nSpec: drop shadow x0 y3 blur 6 spread 0 #000000@16%.\nAccessibility: shadows alone are not a sufficient boundary (WCAG 1.4.11); pair with a border or fill contrast, and never use elevation as the only cue for state.\nAI: apply the effect style elevation/interactive/hover as a whole; do not recreate shadows with raw values. In CSS use box-shadow.",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "3px",
+            "blur": "6px",
+            "spread": "0px",
+            "color": "#00000029"
+          }
+        ]
+      },
+      "overlay": {
+        "$type": "shadow",
+        "$description": "Floating elevation for interactive overlays.\nUsage: menus, dropdowns, popovers and tooltips.\nSpec: drop shadow x0 y10 blur 20 spread 0 #000000@16%.\nAccessibility: shadows alone are not a sufficient boundary (WCAG 1.4.11); pair with a border or fill contrast, and never use elevation as the only cue for state.\nAI: apply the effect style elevation/interactive/overlay as a whole; do not recreate shadows with raw values. In CSS use box-shadow.",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "10px",
+            "blur": "20px",
+            "spread": "0px",
+            "color": "#00000029"
+          }
+        ]
+      }
+    },
+    "content": {
+      "overlay": {
+        "$type": "shadow",
+        "$description": "High elevation for content overlays.\nUsage: modals, drawers and bottom sheets above the page.\nSpec: drop shadow x0 y14 blur 28 spread 0 #000000@16%.\nAccessibility: shadows alone are not a sufficient boundary (WCAG 1.4.11); pair with a border or fill contrast, and never use elevation as the only cue for state.\nAI: apply the effect style elevation/content/overlay as a whole; do not recreate shadows with raw values. In CSS use box-shadow.",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "14px",
+            "blur": "28px",
+            "spread": "0px",
+            "color": "#00000029"
+          }
+        ]
+      },
+      "style": {
+        "$type": "shadow",
+        "$description": "Soft, all-around ambient shadow for content emphasis.\nUsage: featured cards or imagery; decorative only.\nSpec: drop shadow x0 y0 blur 38 spread 0 #000000@16%.\nAccessibility: shadows alone are not a sufficient boundary (WCAG 1.4.11); pair with a border or fill contrast, and never use elevation as the only cue for state.\nAI: apply the effect style elevation/content/style as a whole; do not recreate shadows with raw values. In CSS use box-shadow.",
+        "$value": [
+          {
+            "offsetX": "0px",
+            "offsetY": "0px",
+            "blur": "38px",
+            "spread": "0px",
+            "color": "#00000029"
+          }
+        ]
+      }
+    }
+  },
+  "focus": {
+    "ring": {
+      "$type": "shadow",
+      "$description": "Two-tone keyboard focus ring: 4px blue outer ring plus 2px light inner ring.\nUsage: focus-visible state of every interactive element.\nSpec: drop shadow x0 y0 blur 0 spread 4 #0000ff@100% + drop shadow x0 y0 blur 0 spread 2 #f5f7f7@100%.\nAccessibility: the two-tone ring stays visible on light and dark backgrounds; keep at least 3:1 contrast against adjacent colors and never remove it (WCAG 2.4.7, 2.4.11, 2.4.13).\nAI: apply the effect style focus/ring as a whole; do not recreate shadows with raw values. In CSS use box-shadow with :focus-visible.",
+      "$value": [
+        {
+          "offsetX": "0px",
+          "offsetY": "0px",
+          "blur": "0px",
+          "spread": "4px",
+          "color": "#0000ff"
+        },
+        {
+          "offsetX": "0px",
+          "offsetY": "0px",
+          "blur": "0px",
+          "spread": "2px",
+          "color": "#f5f7f7"
+        }
+      ]
+    }
+  }
+}

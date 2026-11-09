@@ -1,0 +1,150 @@
+{
+  "easing": {
+    "linear": {
+      "$type": "string",
+      "$value": "linear",
+      "$description": "Easing curve: linear.\nUsage: constant speed: progress bars, loaders, color fades.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: string token easing/linear; output as the CSS value (e.g. linear), never hard-code."
+    },
+    "ease": {
+      "$type": "string",
+      "$value": "ease",
+      "$description": "Easing curve: ease.\nUsage: general-purpose default curve.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: string token easing/ease; output as the CSS value (e.g. ease), never hard-code."
+    },
+    "ease-in": {
+      "$type": "string",
+      "$value": "ease-in",
+      "$description": "Easing curve: ease-in.\nUsage: elements leaving the screen (accelerate away).\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: string token easing/ease-in; output as the CSS value (e.g. ease-in), never hard-code."
+    },
+    "ease-out": {
+      "$type": "string",
+      "$value": "ease-out",
+      "$description": "Easing curve: ease-out.\nUsage: elements entering the screen (decelerate into place).\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: string token easing/ease-out; output as the CSS value (e.g. ease-out), never hard-code."
+    },
+    "ease-in-out": {
+      "$type": "string",
+      "$value": "ease-in-out",
+      "$description": "Easing curve: ease-in-out.\nUsage: on-screen movement between two positions.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: string token easing/ease-in-out; output as the CSS value (e.g. ease-in-out), never hard-code."
+    },
+    "spring": {
+      "$type": "string",
+      "$value": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "$description": "Easing curve: cubic-bezier(0.34, 1.56, 0.64, 1).\nUsage: playful overshoot for small emphasis (toggles, success). Use sparingly.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: string token easing/spring; output as the CSS value (e.g. cubic-bezier(0.34, 1.56, 0.64, 1)), never hard-code."
+    }
+  },
+  "delay": {
+    "0": {
+      "$type": "dimension",
+      "$value": "0px",
+      "$description": "Animation delay 0ms.\nUsage: start immediately.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token delay/0; output as the CSS value (e.g. 0ms), never hard-code."
+    },
+    "50": {
+      "$type": "dimension",
+      "$value": "50px",
+      "$description": "Animation delay 50ms.\nUsage: stagger sequences or let a trigger settle before the motion starts; keep delays short so UI never feels laggy.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token delay/50; output as the CSS value (e.g. 50ms), never hard-code."
+    },
+    "100": {
+      "$type": "dimension",
+      "$value": "100px",
+      "$description": "Animation delay 100ms.\nUsage: stagger sequences or let a trigger settle before the motion starts; keep delays short so UI never feels laggy.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token delay/100; output as the CSS value (e.g. 100ms), never hard-code."
+    },
+    "150": {
+      "$type": "dimension",
+      "$value": "150px",
+      "$description": "Animation delay 150ms.\nUsage: stagger sequences or let a trigger settle before the motion starts; keep delays short so UI never feels laggy.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token delay/150; output as the CSS value (e.g. 150ms), never hard-code."
+    },
+    "200": {
+      "$type": "dimension",
+      "$value": "200px",
+      "$description": "Animation delay 200ms.\nUsage: stagger sequences or let a trigger settle before the motion starts; keep delays short so UI never feels laggy.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token delay/200; output as the CSS value (e.g. 200ms), never hard-code."
+    },
+    "250": {
+      "$type": "dimension",
+      "$value": "250px",
+      "$description": "Animation delay 250ms.\nUsage: stagger sequences or let a trigger settle before the motion starts; keep delays short so UI never feels laggy.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token delay/250; output as the CSS value (e.g. 250ms), never hard-code."
+    },
+    "300": {
+      "$type": "dimension",
+      "$value": "300px",
+      "$description": "Animation delay 300ms.\nUsage: stagger sequences or let a trigger settle before the motion starts; keep delays short so UI never feels laggy.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token delay/300; output as the CSS value (e.g. 300ms), never hard-code."
+    }
+  },
+  "duration": {
+    "0": {
+      "$type": "dimension",
+      "$value": "0px",
+      "$description": "Animation duration 0ms.\nUsage: no animation (reduced-motion fallback).\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token duration/0; output as the CSS value (e.g. 0ms), never hard-code."
+    },
+    "100": {
+      "$type": "dimension",
+      "$value": "100px",
+      "$description": "Animation duration 100ms.\nUsage: micro-interactions: hover, press, toggles.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token duration/100; output as the CSS value (e.g. 100ms), never hard-code."
+    },
+    "150": {
+      "$type": "dimension",
+      "$value": "150px",
+      "$description": "Animation duration 150ms.\nUsage: micro-interactions: hover, press, toggles.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token duration/150; output as the CSS value (e.g. 150ms), never hard-code."
+    },
+    "200": {
+      "$type": "dimension",
+      "$value": "200px",
+      "$description": "Animation duration 200ms.\nUsage: standard UI transitions: menus, tooltips, accordions.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token duration/200; output as the CSS value (e.g. 200ms), never hard-code."
+    },
+    "250": {
+      "$type": "dimension",
+      "$value": "250px",
+      "$description": "Animation duration 250ms.\nUsage: standard UI transitions: menus, tooltips, accordions.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token duration/250; output as the CSS value (e.g. 250ms), never hard-code."
+    },
+    "300": {
+      "$type": "dimension",
+      "$value": "300px",
+      "$description": "Animation duration 300ms.\nUsage: standard UI transitions: menus, tooltips, accordions.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token duration/300; output as the CSS value (e.g. 300ms), never hard-code."
+    },
+    "400": {
+      "$type": "dimension",
+      "$value": "400px",
+      "$description": "Animation duration 400ms.\nUsage: larger surfaces: modals, sheets, page elements.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token duration/400; output as the CSS value (e.g. 400ms), never hard-code."
+    },
+    "500": {
+      "$type": "dimension",
+      "$value": "500px",
+      "$description": "Animation duration 500ms.\nUsage: larger surfaces: modals, sheets, page elements.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token duration/500; output as the CSS value (e.g. 500ms), never hard-code."
+    },
+    "700": {
+      "$type": "dimension",
+      "$value": "700px",
+      "$description": "Animation duration 700ms.\nUsage: long, expressive or looping animation (loaders, onboarding); use sparingly.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token duration/700; output as the CSS value (e.g. 700ms), never hard-code."
+    },
+    "1000": {
+      "$type": "dimension",
+      "$value": "1000px",
+      "$description": "Animation duration 1000ms.\nUsage: long, expressive or looping animation (loaders, onboarding); use sparingly.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token duration/1000; output as the CSS value (e.g. 1000ms), never hard-code."
+    },
+    "1500": {
+      "$type": "dimension",
+      "$value": "1500px",
+      "$description": "Animation duration 1500ms.\nUsage: long, expressive or looping animation (loaders, onboarding); use sparingly.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token duration/1500; output as the CSS value (e.g. 1500ms), never hard-code."
+    },
+    "2000": {
+      "$type": "dimension",
+      "$value": "2000px",
+      "$description": "Animation duration 2000ms.\nUsage: long, expressive or looping animation (loaders, onboarding); use sparingly.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token duration/2000; output as the CSS value (e.g. 2000ms), never hard-code."
+    },
+    "2500": {
+      "$type": "dimension",
+      "$value": "2500px",
+      "$description": "Animation duration 2500ms.\nUsage: long, expressive or looping animation (loaders, onboarding); use sparingly.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: number (ms unless noted) token duration/2500; output as the CSS value (e.g. 2500ms), never hard-code."
+    }
+  },
+  "iteration": {
+    "infinite": {
+      "$type": "string",
+      "$value": "infinite",
+      "$description": "Iteration count: infinite.\nUsage: continuous looping animation (loaders only).\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: string token iteration/infinite; output as the CSS value (e.g. infinite), never hard-code."
+    },
+    "once": {
+      "$type": "string",
+      "$value": "1",
+      "$description": "Iteration count: 1.\nUsage: play the animation a single time.\nAccessibility: honor prefers-reduced-motion; avoid flashing more than 3 times per second (WCAG 2.3.1); looping animation over 5 seconds needs pause/stop (WCAG 2.2.2).\nAI: string token iteration/once; output as the CSS value (e.g. 1), never hard-code."
+    }
+  }
+}

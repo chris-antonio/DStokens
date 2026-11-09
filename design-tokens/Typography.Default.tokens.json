@@ -1,0 +1,302 @@
+{
+  "font-family": {
+    "primary": {
+      "$type": "string",
+      "$value": "Gill Sans",
+      "$description": "Primary typeface: Gill Sans.\nUsage: expressive headings (display and hero text styles).\nAccessibility: ensure the font is legible at small sizes and supports the languages you ship; always provide a fallback.\nAI: string token font-family/primary; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "primary-fallback": {
+      "$type": "string",
+      "$value": "Arial",
+      "$description": "Fallback font stack entry (Arial) for the primary typeface.\nUsage: append after the primary family in the CSS font-family list so text renders if the web font fails to load.\nAccessibility: ensure the font is legible at small sizes and supports the languages you ship; always provide a fallback.\nAI: string token font-family/primary-fallback; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "secondary": {
+      "$type": "string",
+      "$value": "Inter",
+      "$description": "Secondary typeface: Inter.\nUsage: UI and reading text (title, body, label, caption text styles).\nAccessibility: ensure the font is legible at small sizes and supports the languages you ship; always provide a fallback.\nAI: string token font-family/secondary; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "secondary-fallback": {
+      "$type": "string",
+      "$value": "Arial",
+      "$description": "Fallback font stack entry (Arial) for the secondary typeface.\nUsage: append after the secondary family in the CSS font-family list so text renders if the web font fails to load.\nAccessibility: ensure the font is legible at small sizes and supports the languages you ship; always provide a fallback.\nAI: string token font-family/secondary-fallback; bind to the matching text property or CSS variable, never hard-code."
+    }
+  },
+  "font-size": {
+    "10": {
+      "$type": "dimension",
+      "$value": "10px",
+      "$description": "Font size 10px (0.625rem).\nUsage: used by text styles caption/sm. Pairs with line-height/10.\nAccessibility: below the recommended 12px minimum; reserve for non-essential metadata.\nAI: number token font-size/10; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "11": {
+      "$type": "dimension",
+      "$value": "11px",
+      "$description": "Font size 11px (0.688rem).\nUsage: available in the scale but not used by a text style yet. Pairs with line-height/11.\nAccessibility: below the recommended 12px minimum; reserve for non-essential metadata.\nAI: number token font-size/11; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "Font size 12px (0.75rem).\nUsage: used by text styles label/sm, caption/md. Pairs with line-height/12.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/12; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "13": {
+      "$type": "dimension",
+      "$value": "13px",
+      "$description": "Font size 13px (0.813rem).\nUsage: used by text styles caption/lg. Pairs with line-height/13.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/13; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "14": {
+      "$type": "dimension",
+      "$value": "14px",
+      "$description": "Font size 14px (0.875rem).\nUsage: used by text styles body/sm, label/md. Pairs with line-height/14.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/14; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "15": {
+      "$type": "dimension",
+      "$value": "15px",
+      "$description": "Font size 15px (0.938rem).\nUsage: available in the scale but not used by a text style yet. Pairs with line-height/15.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/15; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "16": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Font size 16px (1rem).\nUsage: used by text styles body/md, label/lg. Pairs with line-height/16.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/16; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "18": {
+      "$type": "dimension",
+      "$value": "18px",
+      "$description": "Font size 18px (1.125rem).\nUsage: used by text styles body/lg. Pairs with line-height/18.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/18; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "20": {
+      "$type": "dimension",
+      "$value": "20px",
+      "$description": "Font size 20px (1.25rem).\nUsage: available in the scale but not used by a text style yet. Pairs with line-height/20.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/20; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "22": {
+      "$type": "dimension",
+      "$value": "22px",
+      "$description": "Font size 22px (1.375rem).\nUsage: available in the scale but not used by a text style yet. Pairs with line-height/22.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/22; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "24": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "Font size 24px (1.5rem).\nUsage: available in the scale but not used by a text style yet. Pairs with line-height/24.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/24; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "28": {
+      "$type": "dimension",
+      "$value": "28px",
+      "$description": "Font size 28px (1.75rem).\nUsage: used by text styles title/sm. Pairs with line-height/28.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/28; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "32": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": "Font size 32px (2rem).\nUsage: used by text styles title/md. Pairs with line-height/32.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/32; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "36": {
+      "$type": "dimension",
+      "$value": "36px",
+      "$description": "Font size 36px (2.25rem).\nUsage: available in the scale but not used by a text style yet. Pairs with line-height/36.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/36; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "40": {
+      "$type": "dimension",
+      "$value": "40px",
+      "$description": "Font size 40px (2.5rem).\nUsage: used by text styles title/lg. Pairs with line-height/40.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/40; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "48": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": "Font size 48px (3rem).\nUsage: used by text styles display/sm. Pairs with line-height/48.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/48; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "56": {
+      "$type": "dimension",
+      "$value": "56px",
+      "$description": "Font size 56px (3.5rem).\nUsage: used by text styles display/md. Pairs with line-height/56.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/56; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "64": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$description": "Font size 64px (4rem).\nUsage: used by text styles display/lg. Pairs with line-height/64.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/64; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "72": {
+      "$type": "dimension",
+      "$value": "72px",
+      "$description": "Font size 72px (4.5rem).\nUsage: used by text styles hero/sm. Pairs with line-height/72.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/72; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "80": {
+      "$type": "dimension",
+      "$value": "80px",
+      "$description": "Font size 80px (5rem).\nUsage: used by text styles hero/md. Pairs with line-height/80.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/80; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "92": {
+      "$type": "dimension",
+      "$value": "92px",
+      "$description": "Font size 92px (5.75rem).\nUsage: used by text styles hero/lg. Pairs with line-height/92.\nAccessibility: ship in rem so text scales to 200% (WCAG 1.4.4).\nAI: number token font-size/92; bind to the matching text property or CSS variable, never hard-code."
+    }
+  },
+  "line-height": {
+    "10": {
+      "$type": "dimension",
+      "$value": "14px",
+      "$description": "Line height 14px for 10px text (ratio 1.40).\nUsage: pairs with font-size/10.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/10; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "11": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Line height 16px for 11px text (ratio 1.45).\nUsage: pairs with font-size/11.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/11; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Line height 16px for 12px text (ratio 1.33).\nUsage: pairs with font-size/12.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/12; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "13": {
+      "$type": "dimension",
+      "$value": "18px",
+      "$description": "Line height 18px for 13px text (ratio 1.38).\nUsage: pairs with font-size/13.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/13; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "14": {
+      "$type": "dimension",
+      "$value": "20px",
+      "$description": "Line height 20px for 14px text (ratio 1.43).\nUsage: pairs with font-size/14.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/14; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "15": {
+      "$type": "dimension",
+      "$value": "22px",
+      "$description": "Line height 22px for 15px text (ratio 1.47).\nUsage: pairs with font-size/15.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/15; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "16": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "Line height 24px for 16px text (ratio 1.50).\nUsage: pairs with font-size/16.\nAccessibility: meets the 1.5 ratio recommended for paragraph text (WCAG 1.4.12).\nAI: number token line-height/16; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "18": {
+      "$type": "dimension",
+      "$value": "26px",
+      "$description": "Line height 26px for 18px text (ratio 1.44).\nUsage: pairs with font-size/18.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/18; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "20": {
+      "$type": "dimension",
+      "$value": "28px",
+      "$description": "Line height 28px for 20px text (ratio 1.40).\nUsage: pairs with font-size/20.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/20; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "22": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": "Line height 32px for 22px text (ratio 1.45).\nUsage: pairs with font-size/22.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/22; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "24": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": "Line height 32px for 24px text (ratio 1.33).\nUsage: pairs with font-size/24.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/24; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "28": {
+      "$type": "dimension",
+      "$value": "36px",
+      "$description": "Line height 36px for 28px text (ratio 1.29).\nUsage: pairs with font-size/28.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/28; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "32": {
+      "$type": "dimension",
+      "$value": "40px",
+      "$description": "Line height 40px for 32px text (ratio 1.25).\nUsage: pairs with font-size/32.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/32; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "36": {
+      "$type": "dimension",
+      "$value": "44px",
+      "$description": "Line height 44px for 36px text (ratio 1.22).\nUsage: pairs with font-size/36.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/36; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "40": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": "Line height 48px for 40px text (ratio 1.20).\nUsage: pairs with font-size/40.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/40; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "48": {
+      "$type": "dimension",
+      "$value": "56px",
+      "$description": "Line height 56px for 48px text (ratio 1.17).\nUsage: pairs with font-size/48.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/48; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "56": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$description": "Line height 64px for 56px text (ratio 1.14).\nUsage: pairs with font-size/56.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/56; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "64": {
+      "$type": "dimension",
+      "$value": "72px",
+      "$description": "Line height 72px for 64px text (ratio 1.13).\nUsage: pairs with font-size/64.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/64; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "72": {
+      "$type": "dimension",
+      "$value": "80px",
+      "$description": "Line height 80px for 72px text (ratio 1.11).\nUsage: pairs with font-size/72.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/72; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "80": {
+      "$type": "dimension",
+      "$value": "96px",
+      "$description": "Line height 96px for 80px text (ratio 1.20).\nUsage: pairs with font-size/80.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/80; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "92": {
+      "$type": "dimension",
+      "$value": "108px",
+      "$description": "Line height 108px for 92px text (ratio 1.17).\nUsage: pairs with font-size/92.\nAccessibility: ratio is below 1.5; use for headings and short UI text, not long paragraphs.\nAI: number token line-height/92; bind to the matching text property or CSS variable, never hard-code."
+    }
+  },
+  "letter-spacing": {
+    "0": {
+      "$type": "dimension",
+      "$value": "0px",
+      "$description": "Letter spacing 0px.\nUsage: default tracking for body and UI text.\nAccessibility: layouts must tolerate user spacing overrides (WCAG 1.4.12).\nAI: number token letter-spacing/0; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "neg-0_5": {
+      "$type": "dimension",
+      "$value": "-0.5px",
+      "$description": "Letter spacing -0.5px.\nUsage: tighten large headings (display, title, hero) only.\nAccessibility: never apply negative tracking to body or small text; layouts must tolerate user spacing overrides (WCAG 1.4.12).\nAI: number token letter-spacing/neg-0_5; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "neg-1": {
+      "$type": "dimension",
+      "$value": "-1px",
+      "$description": "Letter spacing -1px.\nUsage: tighten large headings (display, title, hero) only.\nAccessibility: never apply negative tracking to body or small text; layouts must tolerate user spacing overrides (WCAG 1.4.12).\nAI: number token letter-spacing/neg-1; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "neg-1_5": {
+      "$type": "dimension",
+      "$value": "-1.5px",
+      "$description": "Letter spacing -1.5px.\nUsage: tighten large headings (display, title, hero) only.\nAccessibility: never apply negative tracking to body or small text; layouts must tolerate user spacing overrides (WCAG 1.4.12).\nAI: number token letter-spacing/neg-1_5; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "neg-2": {
+      "$type": "dimension",
+      "$value": "-2px",
+      "$description": "Letter spacing -2px.\nUsage: tighten large headings (display, title, hero) only.\nAccessibility: never apply negative tracking to body or small text; layouts must tolerate user spacing overrides (WCAG 1.4.12).\nAI: number token letter-spacing/neg-2; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "neg-4": {
+      "$type": "dimension",
+      "$value": "-4px",
+      "$description": "Letter spacing -4px.\nUsage: tighten large headings (display, title, hero) only.\nAccessibility: never apply negative tracking to body or small text; layouts must tolerate user spacing overrides (WCAG 1.4.12).\nAI: number token letter-spacing/neg-4; bind to the matching text property or CSS variable, never hard-code."
+    }
+  },
+  "font-weight": {
+    "light": {
+      "$type": "dimension",
+      "$value": "300",
+      "$description": "Font weight 300 (light).\nUsage: large display text only; avoid for small text.\nAccessibility: do not convey meaning with weight alone; thin weights lose legibility at small sizes.\nAI: number token font-weight/light; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "regular": {
+      "$type": "dimension",
+      "$value": "400",
+      "$description": "Font weight 400 (regular).\nUsage: body copy and captions.\nAccessibility: do not convey meaning with weight alone; thin weights lose legibility at small sizes.\nAI: number token font-weight/regular; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "medium": {
+      "$type": "dimension",
+      "$value": "500",
+      "$description": "Font weight 500 (medium).\nUsage: labels, buttons and UI text.\nAccessibility: do not convey meaning with weight alone; thin weights lose legibility at small sizes.\nAI: number token font-weight/medium; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "semibold": {
+      "$type": "dimension",
+      "$value": "600",
+      "$description": "Font weight 600 (semibold).\nUsage: titles and emphasis.\nAccessibility: do not convey meaning with weight alone; thin weights lose legibility at small sizes.\nAI: number token font-weight/semibold; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "bold": {
+      "$type": "dimension",
+      "$value": "700",
+      "$description": "Font weight 700 (bold).\nUsage: display and strong emphasis.\nAccessibility: do not convey meaning with weight alone; thin weights lose legibility at small sizes.\nAI: number token font-weight/bold; bind to the matching text property or CSS variable, never hard-code."
+    },
+    "black": {
+      "$type": "dimension",
+      "$value": "900",
+      "$description": "Font weight 900 (black).\nUsage: rare, maximum emphasis such as hero numbers.\nAccessibility: do not convey meaning with weight alone; thin weights lose legibility at small sizes.\nAI: number token font-weight/black; bind to the matching text property or CSS variable, never hard-code."
+    }
+  }
+}
